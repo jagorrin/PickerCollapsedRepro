@@ -1,0 +1,3 @@
+## Picker Collapsed Repro
+
+This repository is a minimum repro of the issue outlined [here](https://github.com/microsoft/react-native-windows/issues/5317). I created this app by following the Getting Started steps in the react-native-windows project, and then placed a Picker into the app. I expect the Narrator announcement of the Picker after selecting an option to read the currently selected value of the Picker, followed by "Combo box, collapsed". Instead, it reads "Combo box, collapsed, collapsed". The state "collapsed" should not be read aloud twice by Narrator.
